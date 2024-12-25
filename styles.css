@@ -1,0 +1,131 @@
+/* グローバルスタイル */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+/* コンテナ */
+.min-h-screen {
+  min-height: 100vh;
+}
+
+.max-w-7xl {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+/* カードスタイル */
+.bg-white {
+  background-color: #ffffff;
+}
+
+.rounded-xl {
+  border-radius: 12px;
+}
+
+.shadow-sm {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.p-6 {
+  padding: 1.5rem;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
+/* ヘッダー */
+.text-[#1a365d] {
+  color: #1a365d;
+}
+
+.font-roboto {
+  font-family: 'Roboto', sans-serif;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
+/* リンクとボタン */
+.text-[#2563eb] {
+  color: #2563eb;
+}
+
+.hover\:text-[#1d4ed8]:hover {
+  color: #1d4ed8;
+}
+
+.bg-[#2563eb] {
+  background-color: #2563eb;
+}
+
+.hover\:bg-[#1d4ed8]:hover {
+  background-color: #1d4ed8;
+}
+
+.text-white {
+  color: #ffffff;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
+.transition-colors {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* プログレスバー */
+.bg-gray-200 {
+  background-color: #e5e7eb;
+}
+
+.bg-[#2563eb] {
+  background-color: #2563eb;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+.h-2 {
+  height: 0.5rem;
+}
+
+/* その他 */
+.text-gray-500 {
+  color: #6b7280;
+}
+.text-gray-600 {
+  color: #4b5563;
+}
+.text-gray-700 {
+  color: #374151;
+}
+.text-gray-800 {
+  color: #1f2937;
+}
