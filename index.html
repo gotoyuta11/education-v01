@@ -1,79 +1,47 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>学習ダッシュボード</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
-</head>
-<body>
-    <div class="container">
-        <header class="header">
-            <h1>ようこそ、鈴木 太郎さん</h1>
-            <p>今週の学習目標達成率: 68%</p>
-            <div class="actions">
-                <a href="/courses" class="link">コース一覧</a>
-                <button class="btn">新しいコースを追加</button>
-            </div>
-        </header>
-
-        <main class="main">
-            <section class="progress">
-                <h2>学習進捗</h2>
-                <div class="course">
-                    <span>現代文</span>
-                    <div class="progress-bar"><div style="width: 75%;"></div></div>
-                    <span>75%</span>
-                </div>
-                <div class="course">
-                    <span>数学ⅡB</span>
-                    <div class="progress-bar"><div style="width: 60%;"></div></div>
-                    <span>60%</span>
-                </div>
-                <div class="course">
-                    <span>英語</span>
-                    <div class="progress-bar"><div style="width: 45%;"></div></div>
-                    <span>45%</span>
-                </div>
-            </section>
-
-            <section class="tasks">
-                <h2>次のタスク</h2>
-                <div class="task">
-                    <p>現代文 - 評論文課題</p>
-                    <span>期限: 2024年2月17日</span>
-                </div>
-                <div class="task">
-                    <p>数学 - 期末試験対策</p>
-                    <span>期限: 2024年2月20日</span>
-                </div>
-            </section>
-
-            <section class="live-classes">
-                <h2><i class="icon-video"></i>ライブ授業予定</h2>
-                <div class="class">
-                    <p>三角関数の応用</p>
-                    <span>数学ⅡB - 2024年2月15日 15:00</span>
-                </div>
-                <div class="class">
-                    <p>英語長文読解</p>
-                    <span>英語 - 2024年2月16日 16:30</span>
-                </div>
-            </section>
-
-            <section class="recommended">
-                <h2><i class="icon-star"></i>おすすめコース</h2>
-                <div class="course-recommendation">
-                    <p>物理基礎</p>
-                    <span>力学の基本を学ぼう</span>
-                </div>
-                <div class="course-recommendation">
-                    <p>古文入門</p>
-                    <span>古語と文法の基礎</span>
-                </div>
-            </section>
-        </main>
+<div class="dashboard">
+  <header>
+    <h1>ようこそ、鈴木 太郎さん</h1>
+    <p>今週の学習目標達成率: 68%</p>
+    <nav>
+      <a href="#">コース一覧</a>
+      <button class="add-course">+ 新しいコースを追加</button>
+    </nav>
+  </header>
+  
+  <div class="grid-container">
+    <!-- 学習進捗 -->
+    <div class="card progress">
+      <h2>学習進捗</h2>
+      <div class="progress-item">現代文 <div class="progress-bar"><span style="width: 75%;"></span>75%</div></div>
+      <div class="progress-item">数学IIB <div class="progress-bar"><span style="width: 60%;"></span>60%</div></div>
+      <div class="progress-item">英語 <div class="progress-bar"><span style="width: 45%;"></span>45%</div></div>
     </div>
-</body>
-</html>
+    
+    <!-- 次のタスク -->
+    <div class="card tasks">
+      <h2>次のタスク</h2>
+      <ul>
+        <li>現代文 - 評論文課題 <span>期限: 2024年2月17日</span></li>
+        <li>数学 - 期末試験対策 <span>期限: 2024年2月20日</span></li>
+      </ul>
+    </div>
+    
+    <!-- ライブ授業予定 -->
+    <div class="card live-classes">
+      <h2>ライブ授業予定</h2>
+      <ul>
+        <li>三角関数の応用 - 数学IIB <span>2024年2月15日 15:00</span></li>
+        <li>英語長文読解 - 英語 <span>2024年2月16日 16:30</span></li>
+      </ul>
+    </div>
+
+    <!-- おすすめコース -->
+    <div class="card recommended-courses">
+      <h2>おすすめコース</h2>
+      <ul>
+        <li>物理基礎 - 力学の基本を学ぼう</li>
+        <li>古文入門 - 古語と文法の基礎</li>
+      </ul>
+    </div>
+  </div>
+</div>
